@@ -1,0 +1,84 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.*.example
+config/api-keys.json
+config/.env
+!config/api-keys.example.json
+!config/.env.example
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+out/
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+*.log
+logs/
+
+# Testing
+coverage/
+.nyc_output/
+*.coverage
+
+# Cache
+cache/
+data/
+.eslintcache
+.prettierignore
+
+# IDE
+.vscode/settings.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker
+docker-compose.override.yml
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn integrity file
+.yarn-integrity
+
+# Turbo
+.turbo/
+
+# Local test outputs
+*.test.log
+
+# Screen reader captures
+screens/captures/
+screens/cache/
+
+# Broker mock data
+data/mock/

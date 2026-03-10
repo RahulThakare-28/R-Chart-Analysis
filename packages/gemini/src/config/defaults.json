@@ -1,0 +1,17 @@
+{
+  "apiKey": "",
+  "enabled": false,
+  "model": "gemini-2.0-flash-exp",
+  "cache": {
+    "enabled": true,
+    "ttl": 3600
+  },
+  "rateLimits": {
+    "requestsPerMinute": 60,
+    "tokensPerMinute": 60000
+  },
+  "audioConfig": {
+    "sampleRateHertz": 16000,
+    "channelCount": 1
+  }
+}

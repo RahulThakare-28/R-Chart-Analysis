@@ -1,0 +1,74 @@
+{
+  "brokers": {
+    "grow": {
+      "enabled": false,
+      "apiKey": "YOUR_GROW_API_KEY_HERE",
+      "endpoint": "https://api.grow.co.in/v2",
+      "timeout": 10000,
+      "maxRetries": 3,
+      "rateLimit": {
+        "requestsPerMinute": 60,
+        "burstSize": 5
+      },
+      "description": "Grow.co.in - Indian stock broker with free API"
+    },
+    "upstox": {
+      "enabled": false,
+      "apiKey": "YOUR_UPSTOX_API_KEY_HERE",
+      "accessToken": "YOUR_UPSTOX_ACCESS_TOKEN",
+      "endpoint": "https://api.upstox.com/v2",
+      "wsEndpoint": "wss://api.upstox.com/v2/ws",
+      "timeout": 10000,
+      "maxRetries": 3,
+      "rateLimit": {
+        "requestsPerMinute": 100,
+        "burstSize": 10
+      },
+      "description": "Upstox - Trading platform with WebSocket support"
+    },
+    "tickerTape": {
+      "enabled": false,
+      "apiKey": "YOUR_TICKER_TAPE_API_KEY_HERE",
+      "endpoint": "https://api.tickertape.in/v1",
+      "timeout": 10000,
+      "maxRetries": 3,
+      "rateLimit": {
+        "requestsPerMinute": 50,
+        "burstSize": 3
+      },
+      "description": "Ticker Tape - Indian market data and analysis platform"
+    }
+  },
+  "screenReaders": {
+    "tickerTape": {
+      "enabled": false,
+      "captureMethod": "puppeteer",
+      "fps": 2,
+      "timeout": 30000,
+      "ocrEngine": "tesseract",
+      "description": "Live screen capture from Ticker Tape web interface"
+    }
+  },
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "provider": "sendgrid",
+      "apiKey": "YOUR_SENDGRID_API_KEY",
+      "fromEmail": "noreply@chartscanai.com"
+    },
+    "sms": {
+      "enabled": false,
+      "provider": "twilio",
+      "accountSid": "YOUR_TWILIO_ACCOUNT_SID",
+      "authToken": "YOUR_TWILIO_AUTH_TOKEN",
+      "phoneNumber": "YOUR_TWILIO_PHONE_NUMBER"
+    }
+  },
+  "instructions": {
+    "grow": "Get API key from https://grow.co.in -> Settings -> API Keys",
+    "upstox": "Get API key from https://upstox.com -> Settings -> Developer",
+    "tickerTape": "Get API key from https://www.tickertape.in -> Settings -> API",
+    "sendgrid": "Get API key from https://sendgrid.com -> Settings -> API Keys",
+    "twilio": "Get credentials from https://www.twilio.com -> Console"
+  }
+}

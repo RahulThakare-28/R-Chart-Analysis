@@ -1,0 +1,58 @@
+{
+  "name": "chartscanai",
+  "version": "0.1.0",
+  "description": "Real-time candlestick pattern detection for stock market analysis with multi-broker integration",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "migrate": "turbo run migrate",
+    "setup": "bash scripts/setup.sh",
+    "start": "bash scripts/start.sh",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.1.1",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "trading",
+    "candlestick-patterns",
+    "stock-market",
+    "real-time",
+    "india-brokers",
+    "grow",
+    "upstox",
+    "ticker-tape",
+    "pattern-detection"
+  ],
+  "author": "ChartScanAI Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ChartScanAI"
+  },
+  "dependencies": {
+    "vite": "7.3.1",
+    "vitest": "4.0.18"
+  }
+}
